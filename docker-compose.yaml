@@ -189,8 +189,8 @@ services:
     networks:
       - hl-network
     labels:
-      - traefik.http.routers.infra-highlight-ft3kvs-13-web.middlewares=strip-api-prefix
-      - traefik.http.middlewares.strip-api-prefix.stripprefix.prefixes=/backend
+      - traefik.http.routers.infra-highlight-ft3kvs-13-web.middlewares=strip-backend-prefix
+      - traefik.http.middlewares.strip-backend-prefix.stripprefix.prefixes=/backend
 
 
 
